@@ -1,0 +1,22 @@
+{
+  "name": "mj_db_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "cors": "^2.8.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.1",
+    "knex": "^0.12.6",
+    "pg": "^6.1.2",
+    "ramda": "^0.23.0"
+  }
+}
