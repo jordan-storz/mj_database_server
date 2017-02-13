@@ -3,7 +3,7 @@ exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
   return knex('users').del()
     .then(function () {
-      return knex.raw('ALTER SEQUENCE users_id_seq RESTART WITH 3')
+      return knex.raw('ALTER SEQUENCE users_id_seq RESTART WITH 5')
     })
     .then(function () {
       return Promise.all([
@@ -15,6 +15,14 @@ exports.seed = function(knex, Promise) {
         knex('users').insert({
           id: 2,
           username: 'sparticus'
+        }),
+        knex('users').insert({
+          id: 3,
+          username: 'Ghandi'
+        }),
+        knex('users').insert({
+          id: 4,
+          username: 'Phil'
         }),
       ]);
     });
